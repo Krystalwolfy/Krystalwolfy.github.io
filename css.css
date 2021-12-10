@@ -7,10 +7,6 @@
     background-color: #dc143c
 }
 /*To change the background image add a image file then change the file name bellow to the one of the new file <body> to "Background_Img"  */
-.Background_Img{
-    background-image: url('PointOfPride_Blog_HistoryOfTheTransFlag.png');
-    background-position-y: 35%;
-  }
 
 .Text1{
     font-size: 45px;
@@ -20,18 +16,19 @@
 }
 
 .Text2{
-    padding: 0px;
+    padding: auto;
     margin: 0px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1;
     font-size: 2rem;
     color: rgb(0, 0, 0);
 }
 
 .button {
-    background-color: #ddd;
+    background-color: #442d46;
+
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -40,8 +37,9 @@
     cursor: pointer;
     border-radius: 16px;
     margin-right: auto;/*centres in compliant browsers*/
+    
     margin-left: auto;/* "	" */
-    width: 700px;
+    width: 500px;
     font-size: 2rem
   }
 
@@ -55,19 +53,29 @@ body {
     text-align: center;/* hack for ie5*/
     margin: 0px;
     padding: 0px;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
     }
 
 .central {
+    background: linear-gradient(1000deg, rgba(255, 255, 255, 0.137), rgba(255, 255, 255, 0.562));
+    border-radius: 15px;
+    padding-top: 3%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin-right: auto;/*centres in compliant browsers*/
     margin-left: auto;/* "	" */
     width: 755px;
     text-align: center;
+    padding-bottom: 10px;
     }
 
 .image-1{
     margin-top: 0.5cm;
     margin-bottom: 1cm;
-    border-radius: 60px;
+    border-radius: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -76,19 +84,41 @@ body {
 
 @media screen and (orientation:portrait) {
 
+    body {
+        text-align: center;/* hack for ie5*/
+        margin: 0px;
+        padding: 0px;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        }
+
     .button{
-        border-radius: 50px;
-        width: 80%;
+        border-radius: 16px;
+        width: 200px;
         text-align: center;
-        height: 75px;
+        justify-content: center;
+        height: 70px;
         width: 100%;
-        margin: 8px 4px;
+        margin: 4px 4px;
         font-size: 2rem;
         font-weight: 400;
-        border-spacing: 10px;
+        border-spacing: 2px;
         text-size-adjust: 10;
     }
 
+    .central {
+        background: linear-gradient(1000deg, rgba(255, 255, 255, 0.137), rgba(255, 255, 255, 0.562));
+        padding: 15px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        margin-right: auto;/*centres in compliant browsers*/
+        margin-left: auto;/* "	" */
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        }
 
     .Text1{
         font-family: sans-serif;
